@@ -1,0 +1,23 @@
+{
+    "name": "html-table-to-csv",
+    "version": "0.1.0",
+    "description": "Converts a HTML table to CSV.",
+    "keywords": ["html", "table", "matrix", "csv"],
+    "author": "Pascal Hüttermann (https://github.com/nemoxps)",
+    "license": "MIT",
+    "main": "src/index.js",
+    "dependencies": {},
+    "devDependencies": {
+        "eslint": "^4.15.0",
+        "eslint-config-nemoxps": "nemoxps/eslint-config-nemoxps#semver:^0.5.0",
+        "tape": "^4.8.0",
+        "tap-spec": "^4.1.1"
+    },
+    "scripts": {
+        "test:lint": "eslint ./",
+        "test:tape": "tape test/*.test.js | tap-spec",
+        "test": "npm run --silent test:tape && npm run --silent test:lint"
+    },
+    "repository": "nemoxps/html-table-to-csv",
+    "bugs": "https://github.com/nemoxps/html-table-to-csv/issues"
+}
